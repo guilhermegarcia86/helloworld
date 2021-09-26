@@ -32,8 +32,8 @@ public class ExemploArray {
             System.out.println(arrayInicializado[indice]);
         }
 
-        for (int indice: arrayInicializado) {
-            System.out.println(indice);
+        for (int valor: arrayInicializado) {
+            System.out.println(valor);
         }
 
         int[][] arrayDimensional = { {1, 2, 3, 4}, {5, 6, 7} };
