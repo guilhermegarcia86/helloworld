@@ -1,4 +1,4 @@
-package br.com.company.aritogvii;
+package br.com.company.artigoviii;
 
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -7,12 +7,17 @@ public abstract class Conta {
 
     protected String nome;
     protected String documento;
+    protected  BigDecimal saldo;
+
+    public Conta() {
+        this.saldo = new BigDecimal("1000");
+    }
 
     public abstract BigDecimal deposita(BigDecimal quantidade);
 
     public BigDecimal saca(BigDecimal quantidade){
         System.out.println("EXECUTA REGRA DE NEGÓCIO GENERALISTA");
-        return BigDecimal.ZERO;
+        return quantidade;
     }
 
     @Override
@@ -20,6 +25,7 @@ public abstract class Conta {
         return "Conta{" +
                 "nome='" + nome + '\'' +
                 ", documento='" + documento + '\'' +
+                ", saldo=" + saldo +
                 '}';
     }
 

@@ -1,4 +1,4 @@
-package br.com.company.aritogvii;
+package br.com.company.artigovii;
 
 import java.math.BigDecimal;
 
